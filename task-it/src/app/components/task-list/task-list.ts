@@ -22,3 +22,11 @@ export class TaskList {
     {id : 4, title : "Learn python", description : "Watch tutorial on Python basics", completed : true, priority : 'medium'},
   ]
 }
+
+//toggle task completion status
+toggleTask( taskId : number) : void{
+  const task = this.tasks.find(t => t.id === taskId);
+  if (task){
+    task.completed = !task.completed;
+  }
+}
