@@ -10,6 +10,7 @@ interface Task {
 
 @Component({
   selector: 'app-task-list',
+  standalone: true,
   imports: [],
   templateUrl: './task-list.html',
 })
